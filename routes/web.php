@@ -37,6 +37,8 @@ Route::post('/salir', [LogoutController::class, 'store'])->name('logout');
 Route::get('/muro', [PostController::class, 'index'])->name('post.index');
 Route::get('/muro/create',[PostController::class, 'create'])->name('post.create');
 Route::post('/posts',[PostController::class, 'store'])->name('posts.store');
+Route::get('/{user:username}/post/{post}',[PostController::class, 'show'])->name('posts.show');
+// 
 
 Route::post('/imagenes',[ImagenController::class,'store'])->name('imagenes.store');
 

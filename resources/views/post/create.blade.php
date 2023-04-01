@@ -33,6 +33,9 @@
             @error('descripcion')
                 <p style="color: red">{{$message}}</p>
             @enderror
+            
+            <button type="submit" class="btn btn-primary btn-block mb-4">Crear Publicacion</button>
+            
             <div>
                 <input name="imagen" id="imagen" type="hidden" value= {{ old('imagen') }} />
             </div>
@@ -40,7 +43,6 @@
                 <p style="color:red">{{ $message }}</p>
             @enderror
  
-            <button type="submit" class="btn btn-primary btn-block mb-4">Crear Publicacion</button>
         </form>
     </div>
 </div>

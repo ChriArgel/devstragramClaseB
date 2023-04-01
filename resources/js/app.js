@@ -25,3 +25,17 @@ Dropzone.autoDiscover = false;
     }
  
  });
+
+ dropzone.on("success",function(file, response){
+
+   console.log(response.toString);
+   
+   document.querySelector('[name="imagen"]').value = response.imagen;
+   
+   })
+   
+   dropzone.on("removedfile",function(){
+   
+   document.querySelector('[name="imagen"]').value = '/' ;
+   
+   })

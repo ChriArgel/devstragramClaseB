@@ -34,7 +34,7 @@
                 <!-- Default checkbox -->
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="remember" id="flexCheckDefault" />
-                    <label class="form-check-label" for="flexCheckDefault">Recuerdame me</label>
+                    <label class="form-check-label" for="flexCheckDefault">Recuerdame</label>
                 </div>
 
 
